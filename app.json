@@ -10,12 +10,14 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
+      "bundleIdentifier": "com.aifacerating.app",
       "infoPlist": {
         "NSCameraUsageDescription": "需要使用相机拍摄人脸照片进行颜值评分",
         "NSPhotoLibraryUsageDescription": "需要访问相册以选择人脸照片进行颜值评分"
       }
     },
     "android": {
+      "package": "com.aifacerating.app",
       "adaptiveIcon": {
         "backgroundColor": "#0F0F1A",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -25,7 +27,8 @@
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.READ_MEDIA_IMAGES"
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO"
       ],
       "predictiveBackGestureEnabled": false
     },
@@ -50,6 +53,13 @@
         }
       ],
       "expo-image"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f1bb50ae-233c-4907-a596-df03816bc0ba"
+      }
+    },
+    "owner": "hezihua_expo"
   }
 }

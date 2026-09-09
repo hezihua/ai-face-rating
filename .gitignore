@@ -37,6 +37,20 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-# generated native folders
+# generated native folders (prebuild 在 Mac/EAS 上生成，勿提交)
 /ios
 /android
+
+# EAS Build / Submit
+*.ipa
+*.aab
+build-*.apk
+credentials.json
+google-play-service-account.json
+*.keystore
+!debug.keystore
+
+# IDE / OS
+.idea/
+.vscode/
+Thumbs.db

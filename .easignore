@@ -1,0 +1,10 @@
+# 上传到 EAS 构建时忽略（减小体积）
+.git/
+.expo/
+node_modules/.cache/
+*.md
+!README.md
+scripts/
+.env
+.env*.local
+google-play-service-account.json
